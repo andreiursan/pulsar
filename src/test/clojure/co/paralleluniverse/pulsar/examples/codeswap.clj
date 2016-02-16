@@ -1,6 +1,7 @@
 (ns co.paralleluniverse.pulsar.examples.codeswap
   "Hot code swapping example"
-  (:use [co.paralleluniverse.pulsar core actors])
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
   (:refer-clojure :exclude [promise await]))
 
 (defsfn a [n]

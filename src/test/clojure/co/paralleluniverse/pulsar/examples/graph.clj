@@ -2,7 +2,8 @@
 ; Copyright (C) 2013, Parallel Universe Software Co. All rights reserved.
 
 (ns co.paralleluniverse.pulsar.examples.graph
-  (:use [co.paralleluniverse.pulsar core actors])
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
   (:refer-clojure :exclude [promise await]))
 
 (defn- actors-in-a-ring

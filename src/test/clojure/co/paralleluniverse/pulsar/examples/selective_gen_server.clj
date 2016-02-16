@@ -1,8 +1,8 @@
 (ns co.paralleluniverse.pulsar.examples.selective-gen-server
   "An implementation of the selective example using gen-server"
-  (:use [co.paralleluniverse.pulsar core actors])
-  (:refer-clojure :exclude [promise await])
-  (:import [co.paralleluniverse.strands Strand]))
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
+  (:refer-clojure :exclude [promise await]))
 
 
 (def adder (gen-server (reify Server

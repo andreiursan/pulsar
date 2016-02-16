@@ -11,8 +11,8 @@
 ; as published by the Free Software Foundation.
 
 (ns co.paralleluniverse.pulsar.auto-instrumentation-test
-  (:use midje.sweet
-        co.paralleluniverse.pulsar.core)
+  (:require [midje.sweet :refer :all]
+            [co.paralleluniverse.pulsar.core :refer :all])
   (:refer-clojure :exclude [promise await bean])
   (:import [co.paralleluniverse.fibers Fiber]
            (java.io InputStream)))

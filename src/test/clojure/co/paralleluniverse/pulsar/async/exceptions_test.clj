@@ -20,11 +20,10 @@
   "Verify that exceptions thrown on a thread pool managed by
   core.async will propagate out to the JVM's default uncaught
   exception handler."
-  (:use midje.sweet)
-  (:require
-    [clojure.stacktrace :refer [root-cause]]
-    [co.paralleluniverse.pulsar.core :as p]
-    [co.paralleluniverse.pulsar.async :refer [chan go thread put! take! <!! >!!]])
+  (:require [clojure.stacktrace :refer [root-cause]]
+            [co.paralleluniverse.pulsar.core :as p]
+            [co.paralleluniverse.pulsar.async :refer [chan go thread put! take! <!! >!!]]
+            [midje.sweet :refer :all])
   (:import (co.paralleluniverse.fibers Fiber)
            (co.paralleluniverse.strands Strand$UncaughtExceptionHandler)))
 

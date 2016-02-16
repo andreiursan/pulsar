@@ -11,9 +11,9 @@
 ; as published by the Free Software Foundation.
 
 (ns co.paralleluniverse.pulsar.core-test
-  (:use midje.sweet
-        co.paralleluniverse.pulsar.core)
-  (:require [midje.checking.core :as checking])
+  (:require [midje.checking.core :as checking]
+            [midje.sweet :refer :all]
+            [co.paralleluniverse.pulsar.core :refer :all])
   (:refer-clojure :exclude [promise await])
   (:import [java.util.concurrent TimeUnit TimeoutException ExecutionException]
            [co.paralleluniverse.common.util Debug]

@@ -1,6 +1,7 @@
 (ns co.paralleluniverse.pulsar.examples.cluster.ping
   "A distributed version of the classic ping-pong example"
-  (:use [co.paralleluniverse.pulsar core actors])
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
   (:refer-clojure :exclude [promise await]))
 
 ;; for running see comment in pong.clj

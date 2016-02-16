@@ -16,10 +16,10 @@
 ; Distributed under the Eclipse Public License, the same as Clojure.
 ;
 (ns co.paralleluniverse.pulsar.async.api_test
-  (:use midje.sweet)
   (:refer-clojure :exclude [map into reduce merge take partition partition-by])
-  (:require [co.paralleluniverse.pulsar.core :as p])
-  (:require [co.paralleluniverse.pulsar.async :refer :all :as a])
+  (:require [co.paralleluniverse.pulsar.core :as p]
+            [co.paralleluniverse.pulsar.async :refer :all :as a]
+            [midje.sweet :refer :all])
   (:import (co.paralleluniverse.strands Strand)))
 
 (defn default-chan []

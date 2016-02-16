@@ -1,6 +1,7 @@
 (ns co.paralleluniverse.pulsar.examples.priority
   "A selective receive example"
-  (:use [co.paralleluniverse.pulsar core actors])
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
   (:refer-clojure :exclude [promise await]))
 
 ;; This example is intended to be a line-by-line translation of

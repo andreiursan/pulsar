@@ -1,8 +1,9 @@
 (ns co.paralleluniverse.pulsar.examples.tkb
-  (:use co.paralleluniverse.pulsar.core)
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all]
+            [co.paralleluniverse.pulsar.rx :as rx])
   (:import [co.paralleluniverse.strands.channels ReceivePort$EOFException])
-  (:refer-clojure :exclude [promise await])
-  (:require [co.paralleluniverse.pulsar.rx :as rx]))
+  (:refer-clojure :exclude [promise await]))
 
 ;(let [numbers (topic)
 ;      letters (topic)

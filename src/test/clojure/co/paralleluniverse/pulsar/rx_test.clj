@@ -11,11 +11,10 @@
 ; as published by the Free Software Foundation.
 
 (ns co.paralleluniverse.pulsar.rx-test
-  (:use midje.sweet
-        co.paralleluniverse.pulsar.core)
   (:refer-clojure :exclude [promise await])
   (:require [co.paralleluniverse.pulsar.rx :as rx]
-            [midje.checking.core :as checking]))
+            [co.paralleluniverse.pulsar.core :refer :all]
+            [midje.sweet :refer :all]))
 
 (facts "test map and filter"
        (fact "test filter"

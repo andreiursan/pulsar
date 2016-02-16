@@ -1,7 +1,9 @@
 (ns co.paralleluniverse.pulsar.examples.binary
   "A binary-data buffer message example"
-  (:use [co.paralleluniverse.pulsar core actors]
-        [gloss core io])
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all]
+            [gloss.core :refer :all]
+            [gloss.io :refer :all])
   (:refer-clojure :exclude [promise await]))
 
 ;; This is an example of sending, receiving and matching binary data buffers

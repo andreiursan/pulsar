@@ -1,6 +1,7 @@
 (ns co.paralleluniverse.pulsar.examples.primitive-ring-benchmark
   "An implementation of the ring benchmark using fibers and primitive (int) channels"
-  (:use co.paralleluniverse.pulsar.core)
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
   (:refer-clojure :exclude [promise await]))
 
 

@@ -1,6 +1,7 @@
 (ns co.paralleluniverse.pulsar.examples.selective
   "A very simple selective-receive example"
-  (:use [co.paralleluniverse.pulsar core actors])
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
   (:refer-clojure :exclude [promise await]))
 
 

@@ -12,7 +12,8 @@
 
 (ns co.paralleluniverse.pulsar.examples.io
   "Uses Pulsar's fiber-blocking IO"
-  (:use [co.paralleluniverse.pulsar core])
+  (:require [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
   (:refer-clojure :exclude [promise await])
   (:import [co.paralleluniverse.fibers.io FiberSocketChannel FiberServerSocketChannel]
            [java.nio ByteBuffer CharBuffer]

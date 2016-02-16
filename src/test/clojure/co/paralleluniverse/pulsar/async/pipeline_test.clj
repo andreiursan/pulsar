@@ -16,10 +16,10 @@
 ; Distributed under the Eclipse Public License, the same as Clojure.
 ;
 (ns co.paralleluniverse.pulsar.async.pipeline-test
-  (:use midje.sweet)
   (:require [co.paralleluniverse.pulsar.core :as p]
             [co.paralleluniverse.pulsar.async :as a :refer [<! >! <!! >!! go go-loop thread fiber chan close! to-chan
-                                                            pipeline pipeline-blocking pipeline-async]])
+                                                            pipeline pipeline-blocking pipeline-async]]
+            [midje.sweet :refer :all])
   (:import (co.paralleluniverse.strands Strand)))
 
 

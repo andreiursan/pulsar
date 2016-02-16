@@ -12,10 +12,9 @@
 
 (ns co.paralleluniverse.pulsar.dataflow-test
   (:refer-clojure :exclude [promise await])
-  (:use midje.sweet
-        co.paralleluniverse.pulsar.core)
   (:require [co.paralleluniverse.pulsar.dataflow :refer :all]
-            [midje.checking.core :as checking]))
+            [co.paralleluniverse.pulsar.core :refer :all]
+            [midje.sweet :refer :all]))
 
 (facts "vals"
        (fact "When try to set val twice, then throw exception"

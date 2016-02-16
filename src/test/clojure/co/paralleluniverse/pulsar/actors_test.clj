@@ -11,9 +11,9 @@
 ; as published by the Free Software Foundation.
 
 (ns co.paralleluniverse.pulsar.actors-test
-  (:use midje.sweet
-        co.paralleluniverse.pulsar.core
-        co.paralleluniverse.pulsar.actors)
+  (:require [midje.sweet :refer :all]
+            [co.paralleluniverse.pulsar.core :refer :all]
+            [co.paralleluniverse.pulsar.actors :refer :all])
 ;  (:require [co.paralleluniverse.pulsar.lazyseq :as s :refer [channel->lazy-seq]])
   (:refer-clojure :exclude [promise await bean])
   (:import [java.util.concurrent TimeUnit TimeoutException ExecutionException]
